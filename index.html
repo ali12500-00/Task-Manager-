@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h2>Task Manager</h2>
+      <button class="btn">Add Task</button>
+    </header>
+    <div id="form-section">
+      <div class="form">
+        <i class="ri-close-circle-line"></i>
+        <h3>Task Form</h3>
+        <form>
+          <label
+            >Task Title
+            <input type="text" name="" id="title" />
+          </label>
+          <label
+            >Task Category
+            <input type="text" name="" id="category" />
+          </label>
+          <button class="btn">Add Task</button>
+        </form>
+      </div>
+    </div>
+    <div id="task-section">
+      <div class="task-statistics">
+        <h3>Quick Stats</h3>
+        <div class="stats-card">
+          <div class="card">
+            <div class="inner-card">
+              <i class="ri-survey-line"></i>
+              <p class="taskcounter">0</p>
+              <h4>Total Task</h4>
+            </div>
+          </div>
+          <div class="card">
+            <div class="inner-card">
+              <i class="ri-medal-line"></i>
+              <p class="complete">0</p>
+              <h4>Complete</h4>
+            </div>
+          </div>
+          <div class="card">
+            <div class="inner-card">
+              <i class="ri-error-warning-line"></i>
+              <p class="pending">0</p>
+              <h4>Pending</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tasks">
+        <div class="search">
+          <input type="text" name="" id="seaching" placeholder="Search Task" />
+          <select id="categoryFilter">
+            <option value="all">All</option>
+          </select>
+        </div>
+        <div class="tasks-section">
+          <!-- <div class="task">
+            <div class="left-box">
+              <i class="ri-todo-line"></i>
+            </div>
+            <div class="right-box">
+              <div class="heading">
+              <h3>Assignment</h3>
+              <h4>Personal</h4>
+              </div>
+              <div class="option">
+                <h5>Status: <span>Pending</span></h5>
+                <div>
+                  <i class="ri-shield-check-line" title="next"></i>
+                  <i class="ri-edit-line" title="Edit"></i>
+                  <i class="ri-delete-bin-line" title="Delete"></i>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+           <div class="task">
+            <div class="left-box">
+              <i class="ri-todo-line"></i>
+            </div>
+            <div class="right-box">
+              <div class="heading">
+              <h3>Assignment</h3>
+              <h4>Personal</h4>
+              </div>
+              <div class="option">
+                <h5>Status: <span>Pending</span></h5>
+                <div>
+                  <i class="ri-shield-check-line" title="next"></i>
+                  <i class="ri-edit-line" title="Edit"></i>
+                  <i class="ri-delete-bin-line" title="Delete"></i>
+                  
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
